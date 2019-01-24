@@ -31,7 +31,7 @@
     |------|------LaneImages/:包含相机拍摄的原始RGB数据
 
 ## SSD and RefineDet Architecture
-![image](./ssd_fefinedet.PNG)
+![image](./ssd_refinedet.PNG)
 
 
 
