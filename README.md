@@ -1,6 +1,6 @@
 # Object Detection with CFENet
 
-## Repo 结构：
+## Repo Structure：
 
     |
     |----README.md
