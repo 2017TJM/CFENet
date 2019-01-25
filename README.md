@@ -5,44 +5,37 @@
     |
     |----README.md
     |
-    |----model.py: 包含所有深度学习网络
+    |----basemodels：后端基础模型
+    |      |----vgg16.py
+    |      |----resnet.py 
     |
-    |----HNet.py: H网络用于车道线拟合
+    |----cfe.py:CFENet主体网络
     |
-    |----loss.py: 各类损失函数
+    |----data.py:生成训练和测试数据集
     |
-    |----preprocess.py: 包含数据预处理函数
+    |----evaluation.py:检测效果评估网络
     |
-    |----train.py:脚本用于模型训练
+    |----ssd.py:SSD网络
     |
-    |----Data.py：包含Pytorch Dataset对象的定义
+    |----test.py:脚本用于模型测试
     |
-    |----make_predictions.py:用于模型预测
-    |
-    |----clustering.py:包括各类聚类算法
-    |
-    |----logs/
-    |------|------models/:用于训练中模型及参数的保存
-    |------|------loggings/:保存训练日志
-    |
-    |----data/
-    |------|------cluster/:包含用于聚类的ground-truth数据
-    |------|------train_binary/:包含用于车道线语意分割的ground-truth数据
-    |------|------LaneImages/:包含相机拍摄的原始RGB数据
+    |----train.py：模型训练脚本
+
 
 ## SSD and RefineDet Architecture
 ![image](./ssd_fefinedet.PNG)
-
-
 
 ## CFENet Architecture
 ![image](./cfenet.PNG)
 
 ## Features
-- [x] LaneNet 模型构建
-- [x] HNet 模型构建
-- [x] 测试数据集清洗和生成(Tusimple Dataset)
-- [x] 预测阶段聚类算法的实现
-- [x] 构建训练和评估pipeline
+- [x] vgg16后端模型构建
+- [ ] resnet后端模型构建
+- [ ] ssd模型搭建
+- [ ] refinedet模型搭建
+- [ ] cfenet模型搭建
+- [ ] 训练数据集清洗和生成(DeepDrive)
+- [ ] 构建训练和评估pipeline
 - [ ] 模型训练，debug与调参
+- [ ] ONNX Converter
 - [ ] 加入TensorRT模型加速
