@@ -23,7 +23,7 @@
 
 
 ## SSD and RefineDet Architecture
-![image](./ssd_fefinedet.PNG)
+![image](./ssd_refinedet.PNG)
 
 ## CFENet Architecture
 ![image](./cfenet.PNG)
